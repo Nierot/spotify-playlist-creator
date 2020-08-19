@@ -132,12 +132,11 @@ async function toggleShuffle(shuffle) {
     return x;
 }
 
-async function tijdVoorBier(pl) {
+async function tijdVoorBier(playlist) {
     console.log("Tijd voor bier");
     if (playlist === undefined) {
         return 400;
     }
-    playlist = pl;
     let x = {};
     await spotify.play({
         uris: ['spotify:track:2bJaewMbxlwnm69zvOAq3s']
